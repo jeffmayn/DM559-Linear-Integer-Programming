@@ -1,0 +1,5 @@
+python tutorial on linear algebra:
+http://www.imada.sdu.dk/~marco/DM559/Resources/Ipython/Tutorial.html
+
+week 8: first assignment
+week 11: second assignment
