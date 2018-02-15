@@ -1,0 +1,84 @@
+Sheet1 exercise:
+----------------------------------------
+
+ex. 1)
+
+plane flying with and agaings wind:
+
+  ->     (medvind)
+  w   ---------------->     1365 miles / 3 hours
+
+  ->    (modvind)
+  w   <----------------     870 miles / 2 hours
+
+  D = v*t
+
+plane speed = x mph
+windspeed   = y mph
+
+3(x+y) 1365 <=> 3x+3y=1365
+2(x-y) 870  <=> 2x-2y=870
+
+solution by substitution / gauss elimination
+(create a python script to solve)
+
+x = 445
+y = 10
+
+
+ex. 2)
+
+x_1 + x_2 + x_3 = 6               |  1 1 1 6  |  R2-2R1  |  1 1  1  6  |        |  1  1  1  6  |
+2x_1 + 4x_2 + x_3 = 5         =>  |  2 4 1 5  | -------> |  0 2 -1 -7  | ---->  |  0  1 -1 -6  |
+2x_1 + 3x_2 + x_3 = 6             |  2 3 1 6  |          |  0 1 -1 -6  |        |  0  2 -1 -7  |
+
+                        R3-2R2    |  1  1  1  6  |       |  1  1  1  6  |
+                        --------> |  0  1 -1 -6  |  -->  |  0  1 -1 -6  |  => x_1+x_2+x_3 =  6
+                                  |  0  0  2  5  |       |  0  0  1 5/2 |     x_2-x_3     = -6
+                                                            row echolon       x_3 = 5/2
+                                                              form
+                                                                              x_1 - 7/2 + 5/2 = 6 => x_1 =
+                                                                              x_2 = -6 + 5/2 = (-12+5)/2 = -(7/2)
+                                                                              x_3 = 5/2
+result:
+x_1 = 2
+x_2 = -1
+x_3 = 5
+
+ex. 3)
+
+a:
+    Linear equation is homogenous if: Ax = 0
+b:
+    x_1+x_2 = 3
+    (2x_1+3x_2 = 4) * 0
+
+    False. this we cannot do, because we get tautology instead of equevalent
+
+c:
+    x-y = 3
+    x-y = 3    => infinit many solution
+
+    x-y = 3
+    x-y = 5    => x-y = 3  => infeasable
+                  0 = 2
+
+    Statement: True
+
+d:
+    a_1+x_1+a_2X_2 + ... = d
+
+    Statement: True
+
+e:
+    x+y+z=3
+    x+y+z=4
+
+    subtract first from second => 0=1 => system is infeasable
+
+    Statement: False
+
+
+
+
+is it allowed to suctract a row from another one: yes
