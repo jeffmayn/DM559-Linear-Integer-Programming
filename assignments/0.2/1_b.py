@@ -37,14 +37,9 @@ u4 = np.matrix([ [U[0,3]],
 product1 = np.dot(u1,C[0,0]) + np.dot(u2,C[1,0]) + np.dot(u3,C[2,0]) + np.dot(u4,C[3,0])
 product2 = np.dot(U,C)
 print("\nDoes computed vector b corrospond to original:")
-print(np.allclose(product1, product2))
+print(np.allclose(product1, product2, rtol=1e-05, atol=1e-08))
 
 #print("\nC_1:\n%s" %u1)
 #print("\nC_2:\n%s" %u2)
 #print("\nC_3:\n%s" %u3)
 #print("\nC_4:\n%s" %u4)
-
-
-
-
-
